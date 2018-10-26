@@ -20,3 +20,5 @@ Route::get('/teams/{id}', 'TeamsController@show');
 
 Route::get('players', 'PlayersController@index');
 Route::get('/players/{id}', 'PlayersController@show');
+
+Route::get('/register', 'UsersController@create');
