@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">   
-    <title>Sing up</title>
-</head>
-<body>
+@extends('layouts.master')
+
+@section('title')
+Login
+@endsection
+
+
+@section('body')
 <form method = 'post' action = '/register'>
 
 {{ csrf_field() }}
@@ -30,5 +31,4 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-</body>
-</html>
+@endsection
