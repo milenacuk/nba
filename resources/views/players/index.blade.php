@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">   
-    <title>All players</title>
-</head>
-<body>
+@extends('layouts.master')
+    
+@section('title')
+    Players
+@endsection
+
+@section('body')
     <ul>
             @foreach($players as $player)
         <li>
@@ -14,5 +14,4 @@
              @endforeach
     </ul>
     
-</body>
-</html>
+@endsection

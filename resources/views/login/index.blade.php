@@ -1,21 +1,15 @@
 @extends('layouts.master')
 
 @section('title')
-  Registration
+  Login
 @endsection
-
-
 
 @section('body')
 
-<form method = 'post' action = '/register'>
+<form method = 'post' action = '/login'>
 
 {{ csrf_field() }}
-  <div class="form-group">
-    <label>Name</label>
-    <input name = 'name' type="text" class="form-control" id="name" placeholder="Enter name">
-      
-  </div>
+  
   <div class="form-group">
     <label>Email</label>
     <input name = 'email' type="text" class="form-control" id="email" placeholder="Enter email">
@@ -28,6 +22,13 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+@if(count($errors->all()))
+    @foreach($errors->all() as $error)
+    <div class = 'alert alert-danger'>
+    {{ $error }}
+    </div>
+    @endforeach
+@endif
 
 
 @endsection

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">   
-    <title>Team</title>
-</head>
-<body>
+@extends('layouts.master')
+
+@section('title')
+    Team
+@endsection
+
+@section('body')
     <p>Name: {{ $team -> name }}</p>
     <p>Email: {{ $team ->email }}</p>
     <p>Address: {{ $team -> address }}</p>
@@ -17,5 +17,4 @@
             </li>               
      @endforeach
      </ul>
-</body>
-</html>
+@endsection
