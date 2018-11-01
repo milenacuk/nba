@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
           <div class="p-3 mb-3 bg-light rounded">
             <h4 class="font-italic">About</h4>
