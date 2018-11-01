@@ -1,13 +1,16 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
 
+
 class RegisterController extends Controller
 {
     public function create(){
+
         return view ('register.create');
     }
     public function store(){
@@ -28,5 +31,6 @@ class RegisterController extends Controller
         auth()->login($user);
 
         return redirect('/teams');
+
     }
 }

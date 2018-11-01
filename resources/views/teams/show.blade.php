@@ -3,7 +3,6 @@
 @section('title')
 Team
 @endsection>
-
 @section('body')
     <p>Name: {{ $team -> name }}</p>
     <p>Email: {{ $team ->email }}</p>

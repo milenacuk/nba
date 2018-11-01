@@ -1,4 +1,5 @@
 @extends('layouts.master')
+<<<<<<< HEAD
 
 @setion('title')
     All teams
@@ -7,6 +8,7 @@
 @section('body')
 
    
+
     <ul>
             @foreach($players as $player)
         <li>
@@ -16,4 +18,6 @@
              @endforeach
     </ul>
     
+
     @endsection 
+
